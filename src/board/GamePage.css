@@ -1,0 +1,444 @@
+.action img{
+    --s: 50px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #4ECDC4; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px;
+    align-items: center;
+    border: 2px black;
+    justify-content: space-between;
+    box-shadow: 90px 100px 90px -20px rgba(12, 1, 1, 0.2);
+}
+.action img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+.action{
+     
+    width: 10%;
+    position: relative;
+    right: -950px;
+    top:-600px;
+    border-style: dashed;
+
+}
+.gamelist{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.child{
+    flex: 1;
+    margin: 30px;
+    background-color: #addcd9;
+}
+
+.child:first-child{
+    margin-right: 20px;
+
+
+}
+.button-group{
+    margin: 20px;
+    align-items: center;
+}
+.dice-container{
+  
+   
+    position: relative;
+    right: -950px;
+    top:-600px;
+    
+ 
+}
+.containergame{
+    width: 100%;
+    height: 950px;
+    min-height: 150vh;
+    background-image:linear-gradient(79deg,#653cc6,#C66FBC 48%,#f7944d);
+    }
+
+    .Dashboarddiv{
+    width: 40%;
+    border-radius: 15px;
+    position: fixed;
+    right: 0px;
+    bottom: 40px;
+    background-color: bisque;
+    }
+    .Dashboarddiv h4{
+      border-radius: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        text-align: center;
+        background-color: #d762c5;
+    
+    }
+    .boarddiv{
+      width: 60%;
+      float: left;
+      position: relative;
+      left: 70px;
+    }
+    .actiondiv{
+      width: 20%;
+      float: left;
+      border-style: solid;
+      border-radius: 15px;
+      position: relative;
+      right:-150px;
+      bottom:-250px;
+      background-color:rgb(51, 160, 203);
+    }
+
+#scroll-container {
+  border: 3px solid black;
+  background-color: #bfcccb;
+  overflow: hidden;
+
+
+}
+#scroll-text {
+  text-align: right;
+ /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-animation: my-animation 5s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+.pahiladiv{
+  width:20%;
+  float:left;
+  height: 900px;
+
+}
+.watch{
+  background-color:gray;
+  font-size: 22px;
+  font-weight:bold;
+  text-align: center;
+
+}
+.dusradiv{
+  width:60%;
+  float: left;
+  height: 800px;
+
+}
+
+.tisradiv{
+  width:20%;
+  float: right;
+  height: 800px;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+ }
+  to {
+    -moz-transform: translateX(100%);
+ }
+}
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(-100%);
+ }
+  to {
+    -webkit-transform: translateX(100%);
+ }
+}
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+ }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+ }
+}
+
+.joingame-button{
+  font-size:20px;
+  padding: 15px;
+  border-radius: 25px; 
+  margin-right: 10px;
+  background-color: rgb(137, 222, 17);
+  
+}
+.creategame-button{
+  padding: 15px;
+  font-size:20px;
+  border-radius: 25px; 
+  margin-left: 10px;
+  
+  background-color: rgb(137, 222, 17);
+  
+}
+.creategame-button:hover{background-color: yellow;
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;;
+}
+.joingame-button:hover{
+  background-color: yellow;
+  animation: shake 0.5s;
+}  
+.joingame-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.creategame-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.borderdeto{
+  background-color: #33d1dc;
+}
+
+.infobutton{
+  font-size: 0px;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+
+}
+
+
+.buttongroup{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  position: relative;
+  top: 150px;
+  right:0px;
+  height: 50px;
+  width: 300px;
+  padding: 20px;
+
+  
+}
+.loggedinplayer{
+  width: 20%;
+  float: right;
+  height: 800px;
+
+  background-color: black;
+}
+
+:root {
+  --glow-color: rgb(16, 218, 241);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.glowing-btn {
+  position: relative;
+  color: var(--glow-color);
+  cursor: pointer;
+  padding: 0.35em 1em;
+  border: 0.15em solid var(--glow-color);
+  border-radius: 0.45em;
+  background: rgb(5, 5, 22);
+  perspective: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 1000;
+  letter-spacing: 1em;
+  margin-top: 10px;
+
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  animation: border-flicker 2s linear infinite;
+}
+
+.glowing-txt {
+  float: left;
+  margin-right: -0.8em;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+  animation: text-flicker 3s linear infinite;
+}
+
+.faulty-letter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--glow-color);
+  pointer-events: none;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--glow-color);
+  transition: opacity 100ms linear;
+}
+
+.glowing-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+}
+
+.glowing-btn:hover .glowing-txt {
+  animation: none;
+}
+
+.glowing-btn:hover .faulty-letter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.glowing-btn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.glowing-btn:hover:after {
+  opacity: 1;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}

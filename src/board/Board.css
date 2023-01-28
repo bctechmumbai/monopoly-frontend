@@ -1,0 +1,391 @@
+.card{
+  display: inline-block;
+  justify-items: center;
+  border-color: black;
+
+  width: 80px;
+  transition: all 0.3s;
+  background-color: antiquewhite;
+  height: 100px;
+}
+
+.card:hover{
+  transform: scale(1.80);
+  z-index: 2;
+}
+.card h6{
+  text-align: center;
+}
+.card p{
+  text-size-adjust: 9px;
+}
+.containerboard {
+
+  min-height: 100vh;
+position: relative;
+  font-size: 7px;
+  font-weight: 500;
+  place-content: center;
+  top: -160px;
+  width: 850px;
+  right: 40px;
+  height: 950px;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(42, 17, 112) 100%);
+  border:9px red ;
+  border-radius: 9px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "start mumbai agra motorboat ahmedabad shoppingmall shimla transaction delhi jail"
+    "amrutsar . . . . . . . . jaipur"
+    "luck2 . . . . . . . . luck1"
+    "kanpur . . . . . . . . banglore"
+    "income-tax . . . . . . . . hydrabad"
+    "chennai . . . . . . . . air-india"
+    "shrinagar . . . . . . . . electric-company"
+    "kolkata . . . . . . . . goa"
+    "bus . . . . . . . . patna"
+    "club indore darjiling railway water-tax incometax chandigarh cochin transaction1 centralpark1fr";
+    transform:
+  perspective(2000px)
+  translate3d(0px, 0px, -350px)
+  rotateX(27deg)
+  scale(0.9, 0.9);
+border-radius: 20px;
+border: 10px solid #4c33c8;
+box-shadow: 90px 100px 90px -20px rgba(12, 1, 1, 0.2);
+transition: 0.4s ease-in-out transform;
+
+  
+  
+  }
+/*
+  .containerboard:hover{
+   
+    transform: translate3d(0px, 0px, -150px);
+  
+  }
+  */
+
+@keyframes example {
+  from {transform: rotate3D(1,0,0,70deg) rotate3D(0,0,1,0deg);}
+  to {transform: rotate3D(1,0,0,70deg) rotate3D(0,0,1,360deg);}
+}
+
+.card h6{
+  font-size: 10px;
+
+}
+.card img{
+  position: relative;
+  height: 30px;
+  left: 18px;
+  width: 40px;
+}
+.card li{
+  position: relative;
+  left: 10px;
+}
+
+.start {
+  grid-area: start;
+  
+
+}
+.start h6 {
+  background-color: white;
+}
+
+.mumbai {
+  grid-area: mumbai;
+}
+.button{
+  grid-area: button;
+}
+
+.mumbai h6 {
+  background-color: rgb(237, 138, 155);
+}
+
+
+.agra {
+  grid-area: agra;
+}
+.agra h6 {
+  background-color: hsl(198, 71%, 62%);
+}
+
+.motorboat {
+  grid-area: motorboat;
+}
+.motorboat h6 {
+  background-color: rgb(155, 80, 80);
+}
+.ahmedabad {
+  grid-area: ahmedabad;
+
+}
+.ahmedabad h6 {
+  background-color: rgb(237, 138, 155);
+}
+
+.shimla {
+  grid-area: shimla;
+
+}
+.shimla h6 {
+  background-color: yellow
+}
+
+.transaction {
+  grid-area: transaction;
+}
+
+.delhi {
+  grid-area: delhi;
+
+}
+.delhi h6 {
+  background-color: rgb(55, 142, 55)
+}
+
+.jail {
+  grid-area: jail;
+ 
+
+}
+
+.jaipur {
+  grid-area: jaipur;
+
+}
+.jaipur h6 {
+  background-color: rgb(237, 138, 155);
+}
+
+.luck1 {
+  grid-area: luck1;
+}
+
+.banglore {
+  grid-area: banglore;
+
+}
+.banglore h6 {
+  background-color: yellow
+}
+
+.hydrabad {
+  grid-area: hydrabad;
+
+}
+.hydrabad h6 {
+  background-color: rgb(237, 138, 155);
+}
+
+.air-india {
+  grid-area: air-india;
+
+}
+.air-india h6 {
+  background-color: rgb(155, 80, 80);
+}
+
+
+.electric-company {
+  grid-area: electric-company;
+}
+.electric-company h6 {
+  background-color: rgb(155, 80, 80);
+}
+
+.goa {
+  grid-area: goa;
+
+}
+.goa h6 {
+  background-color: rgb(55, 142, 55)
+}
+
+
+
+.patna {
+  grid-area: patna;
+
+}
+.patna h6 {
+  background-color: hsl(198, 71%, 62%);
+}
+
+.centralpark1fr {
+  grid-area: centralpark1fr;
+}
+
+.transaction1 {
+  grid-area: transaction1;
+}
+
+.cochin {
+  grid-area: cochin;
+
+}
+.cochin h6 {
+  background-color: rgb(55, 142, 55)
+}
+
+.chandigarh {
+  grid-area: chandigarh;
+}
+.chandigarh h6 {
+  background-color: rgb(55, 142, 55)
+}
+
+.incometax {
+  grid-area: incometax;
+}
+
+.water-tax {
+  grid-area: water-tax;
+}
+.water-tax h6 {
+  background-color: rgb(155, 80, 80);
+}
+
+.railway {
+  grid-area: railway;
+}
+.railway h6 {
+  background-color: rgb(155, 80, 80);
+}
+
+.darjiling {
+  grid-area: darjiling;
+}
+.darjiling h6 {
+  background-color: rgb(237, 138, 155);
+}
+
+.indore {
+  grid-area: indore;
+}
+.indore h6 {
+  background-color: hsl(198, 71%, 62%);
+}
+
+
+.club {
+  grid-area: club;
+}
+
+.bus {
+  grid-area: bus;
+}
+.bus h6 {
+  background-color: rgb(155, 80, 80);
+}
+
+.kolkata {
+  grid-area: kolkata;
+}
+.kolkata h6 {
+  background-color: rgb(237, 138, 155);
+}
+
+.shrinagar {
+  grid-area: shrinagar;
+}
+.shrinagar h6 {
+  background-color: yellow
+}
+
+.chennai {
+  grid-area: chennai;
+}
+.chennai h6 {
+  background-color: yellow
+}
+
+.income-tax {
+  grid-area: income-tax;
+}
+
+.kanpur {
+  grid-area: kanpur;
+}
+.kanpur h6 {
+  background-color: hsl(198, 71%, 62%);
+}
+
+.luck2 {
+  grid-area: luck2;
+}
+
+.amrutsar {
+  grid-area: amrutsar;
+  
+}
+.amrutsar h6 {
+  background-color: yellow
+  
+  
+}
+
+
+.shoppingmall {
+  grid-area: shoppingmall;
+}
+.shoppingmall h6 {
+  background-color: rgb(55, 142, 55)
+}
+/*
+.Boardsarkawa{
+  position: relative;
+  right: -110px;
+
+}*/
+
+.Playerstext{
+  background-color:red;
+  text-align: center;
+  color:white;
+  scale: 1.2;
+}
+
+.List{
+  text-align: center;
+  background-color:rgb(220, 220, 224);
+  border-radius: 2px;
+}
+
+.colorset{
+  color:black;
+}
+
+.positioncard{
+  position: fixed;
+  top:100px;
+  left: 50px;
+  
+ 
+  display: inline-block;
+  justify-items: center;
+  border-color: black;
+  width: 200px;
+  transition: all 0.3s;
+  background-color: antiquewhite;
+  height: 200px;
+  border-radius: 10px;
+}
+
+
+
+.positioncard h6{
+  text-align: center;
+}
+.positioncard p{
+  text-size-adjust: 9px;
+}

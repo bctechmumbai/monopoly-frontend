@@ -1,0 +1,67 @@
+/*.dashboardcontainer {
+
+    position: relative;
+    top: 20px;
+    font-size: 10px;
+    left: 20px;
+    height: 100px;
+    background: rgb(238,174,202);
+    display: grid;
+    justify-content: center;
+   
+}
+.playercard{
+  
+        display: inline-block;
+        justify-items: center;
+        border-color: black;
+        width: 100px;
+        background-color: antiquewhite;
+        height: 100px;
+        border-radius: 0.25;
+      
+}
+*/
+
+.playerscontainer{
+
+    position :relative;
+    right: 0;
+    top: -10px;
+    left: 20px;
+    height: 100px;
+    font-size: 10px;
+    align-items: center;
+    font-display: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.playerscontainer p{
+    position: relative;
+    
+}
+.playerscontainer Card{
+    background-color: aqua;
+}
+.dashboardgrid{
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px;
+  
+    justify-content: left;
+  
+}
+
+.dashboardgrid p{
+    font-size: 10px;
+}
+
+.dashboardgrid Card{
+   padding: 5cm;
+}

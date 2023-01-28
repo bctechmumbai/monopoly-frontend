@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.navbar {
+    height: 60px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);}
+
+  .containerone {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .title{
+    font-family: 'georgia';
+    font-weight: bold; 
+    font-size: 23px;
+    text-align: left;
+    position: absolute;
+    left: 5px;
+  }
+ 
+
+.nav-elements ul {
+    font-size: 18px;
+    font-family: 'georgia';
+position: absolute;
+  display: flex;
+  right: 5px;
+  bottom: 0;
+  top: 5px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+  
